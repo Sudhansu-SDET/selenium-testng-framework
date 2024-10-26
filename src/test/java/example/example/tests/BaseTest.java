@@ -65,14 +65,7 @@ public class BaseTest {
 	 */
 	@BeforeClass
 	protected void setup() {
-//		System.setProperty("webdriver.chrome.driver", Constants.CHROME_DRIVER_PATH);
-		WebDriverManager.chromedriver().setup();
-		ChromeOptions ops = new ChromeOptions();
-		ops.addArguments("disable-infobars");
-		driver = new ChromeDriver(ops);
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		WebDriverContext.setDriver(driver);
+System.out.println("before class");
 	}
 
 	/**
